@@ -40,7 +40,7 @@ return {
                 custom = { ".DS_Store" },
               },
             git = {
-                    ignore = false,
+                ignore = false,    
             },
         })
         local keymap = vim.keymap
