@@ -1,2 +1,2 @@
-require("kmirinski.core")
-require("kmirinski.lazy")
+require("core")
+require("core.lazy")
