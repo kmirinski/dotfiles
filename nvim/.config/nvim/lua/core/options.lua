@@ -1,41 +1,41 @@
+
 vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt
 
--- general
-opt.number = true
-opt.relativenumber = true
-opt.cursorline = true
+local options = {
+    number = true,                      -- set numbered lines
+    relativenumber = true,              -- set relative numbered lines
+    cursorline = true,                  -- highlight the current line
 
--- tabs and indentation
-opt.tabstop = 4
-opt.shiftwidth = 4
-opt.expandtab = true
-opt.autoindent = true
-opt.smartindent = true
-opt.smarttab = true
-opt.softtabstop = 4
-opt.wrap = true
+    tabstop = 4,                        -- number of spaces a <Tab> counts for
+    softtabstop = 4,                    -- number of spaces inserted when pressing <Tab>
+    shiftwidth = 4,                     -- number of spaces used for auto-indent and >> <<
 
--- search options
-opt.ignorecase = true
-opt.smartcase = true
+    expandtab = true,                   -- convert tabs to spaces
+    autoindent = true,                  -- copy indent from current line to when starting a new one
+    smartindent = true,                 -- smarted autoindenting for code
+    smarttab = true,                    -- makes <Tab>/<BS> behave better with indentation
 
--- appearance
-opt.termguicolors = true
-opt.background = "dark"
-opt.signcolumn = "yes"
+    wrap = true,                        -- display lines as one long line
+    linebreak = true,                   -- companion to wrap, don't split words
 
--- backspace
-opt.backspace = "indent,eol,start"
+    ignorecase = true,                  -- ignore case when searching
+    smartcase = true,                   -- override ignorecase if search contains uppercase
 
--- clipboard
-opt.clipboard:append("unnamedplus")
+    termguicolors = true,               -- set term gui colors
+    background = "dark",                -- tell colorschemes to use dark background
 
--- split windows
-opt.splitright = true
-opt.splitbelow = true
+    signcolumn = "yes",                 -- always show the sign column
+    backspace = "indent,eol,start",     -- allow backspace over indent, line breks and start
 
+    splitright = true,                  -- vertical splits open to the right
+    splitbelow = true,                  -- horizontal splits open below
 
+    clipboard = "unnamedplus",          -- use system clipboard for yank, delete, paste
+}
 
+for k, v in pairs(options) do
+    opt[k] = v
+end
 
