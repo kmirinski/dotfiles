@@ -11,6 +11,7 @@ local options = {
 
     expandtab = true,                       -- convert tabs to spaces
     autoindent = true,                      -- copy indent from current line to when starting a new one
+    breakindent = true,                     -- wrapped lines keep indentation (when wrap is enabled)
     -- smartindent = true,                      -- smarter autoindenting for code
     -- smarttab = true,                         -- makes <Tab>/<BS> behave better with indentation
 
