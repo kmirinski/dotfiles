@@ -9,7 +9,7 @@ return {
 
         nvimtree.setup({
             view = {
-                width = 45,
+                width = 32,
                 relativenumber = true,
               },
               -- change folder arrow icons
@@ -40,7 +40,7 @@ return {
                 custom = { ".DS_Store" },
               },
             git = {
-                ignore = false,    
+                ignore = false,
             },
         })
         local keymap = vim.keymap

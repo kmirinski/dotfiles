@@ -59,3 +59,26 @@ keymap("x", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "Move block down (Alt)" })
 keymap("x", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move block up (Alt)" })
 
 
+keymap("n", "<leader>T", "<cmd>split<CR><cmd>terminal<CR>8<C-W>_a", {  desc = "open terminal below" })
+
+
+vim.o.scrolloff = 4 -- keep 4 lines from end of screen
+
+keymap({ "n", "v", "c" }, "<ScrollWheelDown>", "<Up>", { noremap = true, silent = true, unique = true })
+keymap({ "n", "v", "c" }, "<ScrollWheelUp>", "<Down>", { noremap = true, silent = true, unique = true })
+
+keymap({ "i" }, "<ScrollWheelDown>", "<C-o><C-y>", { noremap = true, silent = true, unique = true })
+keymap({ "i" }, "<ScrollWheelUp>", "<C-o><C-e>", { noremap = true, silent = true, unique = true })
+keymap("", "<ScrollWheelRight>", "<Left>", { noremap = true, silent = true })
+keymap("", "<ScrollWheelLeft>", "<Right>", { noremap = true, silent = true })
+
+
+
+
+
+
+
+
+
+
+
