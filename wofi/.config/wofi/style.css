@@ -1,0 +1,46 @@
+window {
+  background-color: #1a1b26;
+  color: #c0caf5;
+  border: 2px solid #7aa2f7;
+  border-radius: 10px;
+}
+
+#input {
+  border-radius: 0;
+  background-color: #16161e;
+  color: #c0caf5;
+  border: none;
+  margin: 4px;
+  padding: 4px;
+}
+
+#outer-box {
+  padding: 4px;
+  font-size: 1.3rem;
+  font-family: "JetBrains Mono","Droid Sans Serif",serif;
+  background-color: #1a1b26;
+}
+
+#inner-box {
+  background-color: #1a1b26;
+}
+
+#entry {
+  background-color: #1a1b26;
+  color: #c0caf5;
+  padding: 4px;
+}
+
+#entry:selected {
+  background-color: #283457;
+  color: #c0caf5;
+  border-radius: 6px;
+}
+
+#text {
+  color: #c0caf5;
+}
+
+#text:selected {
+  color: #c0caf5;
+}
